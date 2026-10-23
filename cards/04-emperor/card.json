@@ -1,0 +1,30 @@
+{
+  "id": "04-emperor",
+  "index": 4,
+  "numeral": "IV",
+  "nameZh": "皇帝",
+  "nameEn": "THE EMPEROR",
+  "frame": [66, 71, 1060, 1690],
+  "halos": [
+    { "at": [240, 1060], "r": 95, "also": [[930, 1060]] },
+    { "at": [190, 640], "r": 110, "also": [[885, 885]] },
+    { "at": [975, 720], "r": 120, "also": [[110, 760]] }
+  ],
+  "summary": {
+    "upright": ["权威、秩序与坚定", "AUTHORITY · ORDER · STEADFASTNESS"],
+    "reversed": ["专制、控制与僵化", "DOMINATION · CONTROL · RIGIDITY"]
+  },
+  "collected": [0, 1, 2, 3, 6, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 5,
+    "numeral": "V",
+    "nameZh": "教皇",
+    "nameEn": "THE HIEROPHANT",
+    "question": "皇帝掌管世俗的秩序，教皇守护信仰的传承。",
+    "questionEn": "The Emperor rules the worldly order; the Hierophant keeps the tradition of faith."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
