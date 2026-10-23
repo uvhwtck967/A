@@ -76,11 +76,11 @@
   ],
   "teaser": {
     "index": 0,
-    "numeral": "",
-    "nameZh": "待定",
-    "nameEn": "TBD",
-    "question": "待定（下一期未指定）",
-    "questionEn": "TBD"
+    "numeral": "0",
+    "nameZh": "愚者",
+    "nameEn": "THE FOOL",
+    "question": "旅程画成了圆，又从哪里开始？",
+    "questionEn": "The circle is closed — where does the journey begin again?"
   },
   "ambient": {},
   "reverseArt": "art_night.png",
