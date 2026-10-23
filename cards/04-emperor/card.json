@@ -1,0 +1,30 @@
+{
+  "id": "04-emperor",
+  "index": 4,
+  "numeral": "IV",
+  "nameZh": "皇帝",
+  "nameEn": "THE EMPEROR",
+  "frame": [66, 71, 1059, 1689],
+  "halos": [
+    { "at": [258, 232], "r": 90, "also": [[905, 250], [240, 1040], [918, 1050]] },
+    { "at": [187, 547], "r": 90, "also": [[887, 900]] },
+    { "at": [975, 740], "r": 140, "also": [[110, 820]] }
+  ],
+  "summary": {
+    "upright": ["权威、秩序与稳定", "AUTHORITY · ORDER · STABILITY"],
+    "reversed": ["专制、僵化与失去自律", "TYRANNY · RIGIDITY · LACK OF DISCIPLINE"]
+  },
+  "collected": [0, 1, 2, 3, 6, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 5,
+    "numeral": "V",
+    "nameZh": "教皇",
+    "nameEn": "THE HIEROPHANT",
+    "question": "世俗的王座之后，是精神的王座。",
+    "questionEn": "After the throne of the world comes a throne of the spirit."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
