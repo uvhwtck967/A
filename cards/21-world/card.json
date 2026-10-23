@@ -1,0 +1,92 @@
+{
+  "id": "21-world",
+  "index": 21,
+  "numeral": "XXI",
+  "nameZh": "世界",
+  "nameEn": "THE WORLD",
+  "frame": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "halos": [
+    {
+      "at": [
+        130,
+        900
+      ],
+      "r": 110,
+      "also": [
+        [
+          980,
+          900
+        ]
+      ]
+    },
+    {
+      "at": [
+        540,
+        500
+      ],
+      "r": 100
+    },
+    {
+      "at": [
+        150,
+        200
+      ],
+      "r": 110,
+      "also": [
+        [
+          950,
+          170
+        ],
+        [
+          130,
+          1530
+        ],
+        [
+          890,
+          1530
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "upright": [
+      "完成、整合与圆满",
+      "COMPLETION · INTEGRATION · WHOLENESS"
+    ],
+    "reversed": [
+      "停滞、未竟与迟迟无法收尾",
+      "STAGNATION · INCOMPLETION · LACK OF CLOSURE"
+    ]
+  },
+  "collected": [
+    2,
+    6,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "teaser": {
+    "index": 0,
+    "numeral": "",
+    "nameZh": "待定",
+    "nameEn": "TBD",
+    "question": "待定（下一期未指定）",
+    "questionEn": "TBD"
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
