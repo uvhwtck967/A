@@ -1,0 +1,80 @@
+{
+  "id": "19-sun",
+  "index": 19,
+  "numeral": "XIX",
+  "nameZh": "太阳",
+  "nameEn": "THE SUN",
+  "frame": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "halos": [
+    {
+      "at": [
+        543,
+        375
+      ],
+      "r": 240
+    },
+    {
+      "at": [
+        420,
+        1150
+      ],
+      "r": 110
+    },
+    {
+      "at": [
+        270,
+        860
+      ],
+      "r": 90,
+      "also": [
+        [
+          465,
+          860
+        ],
+        [
+          975,
+          1020
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "upright": [
+      "活力、喜悦与成功",
+      "VITALITY · JOY · SUCCESS"
+    ],
+    "reversed": [
+      "喜悦减弱、过度乐观与成功推迟",
+      "DIMMED JOY · OVER-OPTIMISM · DELAYED SUCCESS"
+    ]
+  },
+  "collected": [
+    2,
+    6,
+    12,
+    13,
+    16,
+    17,
+    18
+  ],
+  "teaser": {
+    "index": 20,
+    "numeral": "XX",
+    "nameZh": "审判",
+    "nameEn": "JUDGEMENT",
+    "question": "号角吹响，沉睡的人纷纷起身。",
+    "questionEn": "The trumpet sounds, and the sleepers rise."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
