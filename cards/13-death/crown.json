@@ -1,0 +1,12 @@
+{
+  "note": "Crown fall, shared by the animation (Card.tsx) and the score (scripts/music.mjs). Positions in scan px of the 1111x1919 RWS scan; times in seconds.",
+  "bbox": [248, 1588, 378, 1682],
+  "start": [168, 1528],
+  "startRot": 34,
+  "slideEnd": 0.18,
+  "impacts": [0.46, 0.68, 0.80],
+  "bounce": [9, 3],
+  "xAt": [0.06, 0.48, 0.72, 0.86],
+  "restAt": 1.05,
+  "wobble": { "amp": 14, "decay": 5.5, "f0": 2.2, "chirp": 3.5, "audibleDeg": 0.8 }
+}

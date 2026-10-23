@@ -1,0 +1,78 @@
+{
+  "id": "06-lovers",
+  "index": 6,
+  "numeral": "VI",
+  "nameZh": "恋人",
+  "nameEn": "THE LOVERS",
+  "frame": [
+    57,
+    35,
+    909,
+    1425
+  ],
+  "halos": [
+    {
+      "at": [
+        478,
+        330
+      ],
+      "r": 120
+    },
+    {
+      "at": [
+        150,
+        640
+      ],
+      "r": 90,
+      "also": [
+        [
+          100,
+          960
+        ]
+      ]
+    },
+    {
+      "at": [
+        840,
+        720
+      ],
+      "r": 100
+    }
+  ],
+  "summary": {
+    "upright": [
+      "祝福、选择与激情",
+      "BLESSING · CHOICE · PASSION"
+    ],
+    "reversed": [
+      "分歧、不对等与选择困境",
+      "DISAGREEMENT · IMBALANCE · DIFFICULT CHOICES"
+    ]
+  },
+  "collected": [
+    2,
+    12,
+    13
+  ],
+  "teaser": {
+    "index": 16,
+    "numeral": "XVI",
+    "nameZh": "高塔",
+    "nameEn": "THE TOWER",
+    "question": "一道闪电，为何劈开了高塔？",
+    "questionEn": "Why does a bolt of lightning split the tower?"
+  },
+  "ambient": {
+    "radiant": {
+      "at": [
+        476,
+        140
+      ],
+      "r": 70,
+      "rays": 0
+    }
+  },
+  "audio": {
+    "softNoise": true
+  }
+}

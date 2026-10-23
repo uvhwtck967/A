@@ -1,0 +1,44 @@
+{
+  "id": "13-death",
+  "index": 13,
+  "numeral": "XIII",
+  "nameZh": "死神",
+  "nameEn": "DEATH",
+  "frame": [47, 61, 1031, 1686],
+  "halos": [
+    { "at": [205, 1555], "r": 96 },
+    { "at": [686, 300], "r": 92 },
+    { "at": [952, 752], "r": 70 }
+  ],
+  "summary": {
+    "upright": ["旧的结束，新的开始", "An ending that makes way for a beginning"],
+    "reversed": ["该放下的，还攥在手里", "Holding on to what should be let go"]
+  },
+  "collected": [],
+  "teaser": {
+    "index": 12,
+    "numeral": "XII",
+    "nameZh": "倒吊人",
+    "nameEn": "THE HANGED MAN",
+    "question": "他为什么被倒着挂起来？",
+    "questionEn": "Why is he hanging upside down?",
+    "art": "cards/12-hanged-man/art.png"
+  },
+  "ambient": {
+    "radiant": { "at": [952, 752], "r": 58 },
+    "water": { "box": [55, 1205, 755, 1315], "n": 30 },
+    "glint": { "at": [300, 1622] },
+    "ripples": [
+      {
+        "name": "flag",
+        "box": [447, 62, 912, 500],
+        "axis": "y",
+        "amp": 2.4,
+        "boost": 5.5,
+        "fx": "flutter",
+        "sound": "flap",
+        "reveal": { "image": "rose_gold.png", "box": [515, 135, 860, 480], "center": [686, 300], "fxDraw": "roseDraw", "fxLit": "roseLit" }
+      }
+    ]
+  }
+}

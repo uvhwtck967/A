@@ -1,0 +1,74 @@
+{
+ "note": "Input for scripts/restyle.py. Coordinates in px of scans/Lovers_clothed.png (959x1640, the user's clothed-figure version, 2026-10-18). Wing/hand/flame/fruit/serpent masks come from cards/06-lovers/assets.py.",
+ "frame": [
+  57,
+  35,
+  909,
+  1425
+ ],
+ "sprites": [],
+ "sky": [],
+ "reveals": [],
+ "tone": {
+  "note": "sky 0.64-0.72 -> indigo plateau; cloud / woman's robe 0.77-0.87 -> parchment plateau; the slope sits in the gap between them. satMin 0.27 keeps the woman's robe (sat 0.24) neutral.",
+  "satMin": 0.27,
+  "stops": [
+   0.0,
+   0.3,
+   0.55,
+   0.66,
+   0.72,
+   0.745,
+   0.77,
+   0.9,
+   1.0
+  ],
+  "cols": [
+   [
+    0.03,
+    0.025,
+    0.055
+   ],
+   [
+    0.05,
+    0.045,
+    0.09
+   ],
+   [
+    0.11,
+    0.105,
+    0.2
+   ],
+   [
+    0.165,
+    0.16,
+    0.29
+   ],
+   [
+    0.2,
+    0.19,
+    0.32
+   ],
+   [
+    0.5,
+    0.445,
+    0.4
+   ],
+   [
+    0.82,
+    0.735,
+    0.565
+   ],
+   [
+    0.885,
+    0.81,
+    0.63
+   ],
+   [
+    0.95,
+    0.885,
+    0.715
+   ]
+  ]
+ }
+}

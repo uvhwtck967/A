@@ -1,0 +1,76 @@
+{
+  "id": "16-tower",
+  "index": 16,
+  "numeral": "XVI",
+  "nameZh": "高塔",
+  "nameEn": "THE TOWER",
+  "frame": [
+    36,
+    55,
+    1031,
+    1662
+  ],
+  "halos": [
+    {
+      "at": [
+        790,
+        200
+      ],
+      "r": 120
+    },
+    {
+      "at": [
+        530,
+        820
+      ],
+      "r": 150
+    },
+    {
+      "at": [
+        214,
+        994
+      ],
+      "r": 110,
+      "also": [
+        [
+          830,
+          1080
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "upright": [
+      "剧变、崩塌与被迫的解放",
+      "UPHEAVAL · COLLAPSE · FORCED LIBERATION"
+    ],
+    "reversed": [
+      "自欺、抗拒改变与内在煎熬",
+      "SELF-DECEPTION · RESISTANCE TO CHANGE · INNER TURMOIL"
+    ]
+  },
+  "collected": [
+    2,
+    6,
+    12,
+    13
+  ],
+  "teaser": {
+    "index": 17,
+    "numeral": "XVII",
+    "nameZh": "星星",
+    "nameEn": "THE STAR",
+    "question": "高塔崩塌之后，夜空重归宁静。",
+    "questionEn": "After the tower falls, the night sky grows calm again."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  },
+  "audio": {
+    "softNoise": true
+  }
+}

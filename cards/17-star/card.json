@@ -1,0 +1,68 @@
+{
+  "id": "17-star",
+  "index": 17,
+  "numeral": "XVII",
+  "nameZh": "星星",
+  "nameEn": "THE STAR",
+  "frame": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "halos": [
+    {
+      "at": [
+        490,
+        290
+      ],
+      "r": 170
+    },
+    {
+      "at": [
+        430,
+        820
+      ],
+      "r": 200
+    },
+    {
+      "at": [
+        800,
+        500
+      ],
+      "r": 70
+    }
+  ],
+  "summary": {
+    "upright": [
+      "希望、疗愈与灵感",
+      "HOPE · HEALING · INSPIRATION"
+    ],
+    "reversed": [
+      "失望、失去信心与自我怀疑",
+      "DISAPPOINTMENT · LOSS OF FAITH · SELF-DOUBT"
+    ]
+  },
+  "collected": [
+    2,
+    6,
+    12,
+    13,
+    16
+  ],
+  "teaser": {
+    "index": 18,
+    "numeral": "XVIII",
+    "nameZh": "月亮",
+    "nameEn": "THE MOON",
+    "question": "星光之后，月亮升起，道路变得模糊。",
+    "questionEn": "After the starlight, the moon rises and the path grows unclear."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "note": "Input for scripts/restyle.py. Coordinates in px of scans/RWS_Tarot_16_Tower.jpg (1109x1920). Upright = natural look (scan colours, a little darker); reversed = the night edition art_night.png. Crown/yod/flame/bolt masks come from cards/16-tower/assets.py.",
+  "frame": [36, 55, 1031, 1662],
+  "look": { "mode": "natural", "gamma": 1.1, "gain": 0.84, "sat": 1.05, "lift": [0.01, 0.008, 0.022] },
+  "tone": {
+    "note": "night edition: black sky stays dark; tower 0.58-0.66 and clouds 0.68-0.78 sit on two dusky plateaus; satMin 0.27 keeps the taupe tower (sat 0.20) neutral.",
+    "satMin": 0.27,
+    "stops": [0.0, 0.30, 0.50, 0.57, 0.66, 0.69, 0.78, 0.88, 1.0],
+    "cols": [
+      [0.030, 0.025, 0.055], [0.050, 0.045, 0.090], [0.150, 0.140, 0.230], [0.330, 0.300, 0.350], [0.360, 0.330, 0.370],
+      [0.480, 0.440, 0.450], [0.520, 0.475, 0.470], [0.780, 0.700, 0.545], [0.900, 0.825, 0.650]
+    ]
+  },
+  "sprites": [],
+  "sky": [],
+  "reveals": []
+}

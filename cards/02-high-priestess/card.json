@@ -1,0 +1,91 @@
+{
+  "id": "02-high-priestess",
+  "index": 2,
+  "numeral": "II",
+  "nameZh": "女祭司",
+  "nameEn": "THE HIGH PRIESTESS",
+  "frame": [
+    43,
+    62,
+    1047,
+    1670
+  ],
+  "halos": [
+    {
+      "at": [
+        140,
+        800
+      ],
+      "r": 95,
+      "also": [
+        [
+          910,
+          830
+        ]
+      ]
+    },
+    {
+      "at": [
+        560,
+        250
+      ],
+      "r": 140
+    },
+    {
+      "at": [
+        515,
+        1030
+      ],
+      "r": 80
+    }
+  ],
+  "summary": {
+    "upright": [
+      "内心宁静、智慧深藏",
+      "INNER CALM · HIDDEN WISDOM"
+    ],
+    "reversed": [
+      "忽略内心、回避表达",
+      "IGNORING THE INNER SELF · AVOIDING EXPRESSION"
+    ]
+  },
+  "collected": [
+    12,
+    13
+  ],
+  "teaser": {
+    "index": 6,
+    "numeral": "VI",
+    "nameZh": "恋人",
+    "nameEn": "THE LOVERS",
+    "question": "天使之下，他们面对怎样的选择？",
+    "questionEn": "Beneath the angel, what choice do they face?"
+  },
+  "ambient": {
+    "water": {
+      "box": [
+        800,
+        875,
+        858,
+        922
+      ],
+      "n": 10
+    },
+    "ripples": [
+      {
+        "name": "veil",
+        "box": [
+          268,
+          100,
+          816,
+          1278
+        ],
+        "axis": "x",
+        "amp": 0.7,
+        "boost": 1.8,
+        "fx": "ripple"
+      }
+    ]
+  },
+  "reverseTint": false
+}

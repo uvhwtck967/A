@@ -1,0 +1,99 @@
+{
+  "id": "12-hanged-man",
+  "index": 12,
+  "numeral": "XII",
+  "nameZh": "倒吊人",
+  "nameEn": "THE HANGED MAN",
+  "frame": [
+    44,
+    61,
+    1032,
+    1706
+  ],
+  "halos": [
+    {
+      "at": [
+        592,
+        240
+      ],
+      "r": 58
+    },
+    {
+      "at": [
+        470,
+        700
+      ],
+      "r": 110
+    },
+    {
+      "at": [
+        525,
+        1395
+      ],
+      "r": 92
+    }
+  ],
+  "summary": {
+    "upright": [
+      "暂停、牺牲与智慧",
+      "Pause, sacrifice, wisdom"
+    ],
+    "reversed": [
+      "抗拒、停滞与无谓的牺牲",
+      "Resistance, stagnation, needless sacrifice"
+    ]
+  },
+  "reverseBrightness": 1.15,
+  "collected": [
+    13
+  ],
+  "teaser": {
+    "index": 2,
+    "numeral": "II",
+    "nameZh": "女祭司",
+    "nameEn": "THE HIGH PRIESTESS",
+    "question": "帷幕后面，藏着什么？",
+    "questionEn": "What lies behind the veil?"
+  },
+  "ambient": {
+    "radiant": {
+      "at": [
+        525,
+        1395
+      ],
+      "r": 62,
+      "rays": 36,
+      "reverseDark": 0.25
+    },
+    "ripples": [
+      {
+        "name": "vineL",
+        "box": [
+          44,
+          105,
+          235,
+          560
+        ],
+        "axis": "x",
+        "amp": 1.2,
+        "boost": 3.2,
+        "fx": "rustle",
+        "sound": "rustle"
+      },
+      {
+        "name": "vineR",
+        "box": [
+          855,
+          105,
+          1032,
+          545
+        ],
+        "axis": "x",
+        "amp": 1.2,
+        "boost": 3.2,
+        "fx": "rustle",
+        "sound": "rustle"
+      }
+    ]
+  }
+}

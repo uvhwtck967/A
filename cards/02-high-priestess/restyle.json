@@ -1,0 +1,84 @@
+{
+  "note": "Input for scripts/restyle.py. Coordinates in scan px of RWS_Tarot_02_High_Priestess.jpg (1117x1919). Veil hold mask + TORA gold come from cards/02-high-priestess/assets.py.",
+  "frame": [
+    43,
+    62,
+    1047,
+    1670
+  ],
+  "sprites": [],
+  "sky": [
+    {
+      "name": "veil",
+      "from": [
+        300,
+        160,
+        380,
+        230
+      ]
+    }
+  ],
+  "reveals": [],
+  "tone": {
+    "lightThreshold": 0.72,
+    "stops": [
+      0,
+      0.3,
+      0.5,
+      0.6,
+      0.66,
+      0.7,
+      0.74,
+      0.95,
+      1
+    ],
+    "cols": [
+      [
+        0.03,
+        0.025,
+        0.055
+      ],
+      [
+        0.05,
+        0.045,
+        0.09
+      ],
+      [
+        0.11,
+        0.105,
+        0.2
+      ],
+      [
+        0.165,
+        0.16,
+        0.29
+      ],
+      [
+        0.2,
+        0.19,
+        0.32
+      ],
+      [
+        0.5,
+        0.445,
+        0.4
+      ],
+      [
+        0.82,
+        0.735,
+        0.565
+      ],
+      [
+        0.885,
+        0.81,
+        0.63
+      ],
+      [
+        0.95,
+        0.885,
+        0.715
+      ]
+    ],
+    "note": "white pillar J sits at lum 0.77-0.83 and the robe whites at 0.70-0.88: parchment plateau starts at 0.74 so both stay flat"
+  }
+}
