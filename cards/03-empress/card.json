@@ -1,0 +1,30 @@
+{
+  "id": "03-empress",
+  "index": 3,
+  "numeral": "III",
+  "nameZh": "皇后",
+  "nameEn": "THE EMPRESS",
+  "frame": [0, 0, 0, 0],
+  "halos": [
+    { "at": [600, 1560], "r": 260 },
+    { "at": [260, 1230], "r": 150 },
+    { "at": [1010, 950], "r": 120 }
+  ],
+  "summary": {
+    "upright": ["丰饶、爱与美、滋养", "ABUNDANCE · LOVE AND BEAUTY · NURTURE"],
+    "reversed": ["停滞、过度依赖与忽视自己", "STAGNATION · OVER-DEPENDENCE · SELF-NEGLECT"]
+  },
+  "collected": [0, 1, 2, 3, 6, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 4,
+    "numeral": "IV",
+    "nameZh": "皇帝",
+    "nameEn": "THE EMPEROR",
+    "question": "麦田与流水之后，是皇帝的荒山与石座。",
+    "questionEn": "After the fields and the falls come the Emperor's bare mountains and stone throne."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
