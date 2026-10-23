@@ -1,0 +1,81 @@
+{
+  "id": "20-judgement",
+  "index": 20,
+  "numeral": "XX",
+  "nameZh": "审判",
+  "nameEn": "JUDGEMENT",
+  "frame": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "halos": [
+    {
+      "at": [
+        640,
+        900
+      ],
+      "r": 110
+    },
+    {
+      "at": [
+        525,
+        1360
+      ],
+      "r": 100,
+      "also": [
+        [
+          195,
+          1290
+        ],
+        [
+          930,
+          1250
+        ]
+      ]
+    },
+    {
+      "at": [
+        540,
+        1560
+      ],
+      "r": 120
+    }
+  ],
+  "summary": {
+    "upright": [
+      "召唤、重生与清算",
+      "THE CALL · REBIRTH · RECKONING"
+    ],
+    "reversed": [
+      "犹豫、忽视召唤与自我苛责",
+      "HESITATION · IGNORING THE CALL · HARSH SELF-JUDGEMENT"
+    ]
+  },
+  "collected": [
+    2,
+    6,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19
+  ],
+  "teaser": {
+    "index": 21,
+    "numeral": "XXI",
+    "nameZh": "世界",
+    "nameEn": "THE WORLD",
+    "question": "大阿卡纳的最后一张，她在花环中起舞。",
+    "questionEn": "The last of the Major Arcana: she dances inside a wreath."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
