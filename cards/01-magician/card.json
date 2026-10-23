@@ -1,0 +1,74 @@
+{
+  "id": "01-magician",
+  "index": 1,
+  "numeral": "I",
+  "nameZh": "魔术师",
+  "nameEn": "THE MAGICIAN",
+  "frame": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "halos": [
+    {
+      "at": [
+        200,
+        230
+      ],
+      "r": 140
+    },
+    {
+      "at": [
+        330,
+        1110
+      ],
+      "r": 230
+    },
+    {
+      "at": [
+        496,
+        384
+      ],
+      "r": 120
+    }
+  ],
+  "summary": {
+    "upright": [
+      "行动、资源齐备与潜能",
+      "ACTION · RESOURCES AT HAND · POTENTIAL"
+    ],
+    "reversed": [
+      "才能被浪费，或被用来操纵",
+      "WASTED TALENT · MANIPULATION"
+    ]
+  },
+  "collected": [
+    0,
+    2,
+    6,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "teaser": {
+    "index": 3,
+    "numeral": "III",
+    "nameZh": "皇后",
+    "nameEn": "THE EMPRESS",
+    "question": "麦田之中，她在孕育什么？",
+    "questionEn": "Amid the wheat, what is she bringing to life?"
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
