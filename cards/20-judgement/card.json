@@ -1,0 +1,77 @@
+{
+  "id": "20-judgement",
+  "index": 20,
+  "numeral": "XX",
+  "nameZh": "审判",
+  "nameEn": "JUDGEMENT",
+  "frame": [
+    35,
+    31,
+    912,
+    1453
+  ],
+  "halos": [
+    {
+      "at": [
+        555,
+        830
+      ],
+      "r": 80
+    },
+    {
+      "at": [
+        473,
+        1170
+      ],
+      "r": 130
+    },
+    {
+      "at": [
+        700,
+        930
+      ],
+      "r": 80,
+      "also": [
+        [
+          275,
+          1030
+        ]
+      ]
+    }
+  ],
+  "summary": {
+    "upright": [
+      "觉醒、重生与内在召唤",
+      "AWAKENING · REBIRTH · INNER CALLING"
+    ],
+    "reversed": [
+      "犹豫、自我怀疑与回避召唤",
+      "HESITATION · SELF-DOUBT · IGNORING THE CALL"
+    ]
+  },
+  "collected": [
+    2,
+    6,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19
+  ],
+  "teaser": {
+    "index": 21,
+    "numeral": "XXI",
+    "nameZh": "世界",
+    "nameEn": "THE WORLD",
+    "question": "旅程的最后一张牌，会在哪里结束？",
+    "questionEn": "The last card of the journey: where does it end?"
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
