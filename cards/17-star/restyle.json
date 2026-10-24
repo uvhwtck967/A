@@ -1,11 +1,7 @@
 {
-  "note": "Input for scripts/restyle.py. Coordinates in scan px of RWS_Tarot_17_Star.jpg.",
-  "frame": [
-    0,
-    0,
-    0,
-    0
-  ],
+  "note": "Input for scripts/restyle.py. Coordinates in px of scans/Star_clothed.png (955x1647), the user's clothed-figure version. Upright = natural look (scan colours, a little darker); reversed = the night edition art_night.png. The wing and tree-crown sprites come from cards/17-star/assets.py.",
+  "frame": [44, 38, 892, 1416],
+  "look": { "mode": "natural", "gamma": 1.1, "gain": 0.84, "sat": 1.0, "lift": [0.01, 0.008, 0.022] },
   "sprites": [],
   "sky": [],
   "reveals": []

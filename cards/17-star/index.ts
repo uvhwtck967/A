@@ -5,4 +5,4 @@ import { Layers } from "./layers";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const plan = require("./plan.js");
 
-export const card: CardModule = { meta: meta as Meta, plan, gen: gen as Generated, images: ["art.png"], Layers };
+export const card: CardModule = { meta: meta as Meta, plan, gen: gen as Generated, images: ["art.png", "art_night.png", "wings.png", "wings_night.png", "crown.png", "crown_night.png", "water.png"], Layers };
