@@ -95,7 +95,7 @@ node scripts/still.mjs 17-star 0.1 25.5 42.5 53   # 渲染几张单帧到 out/17
 | 渲染显示 100%，但找不到视频文件 | 不要改 `scripts/render.mjs` 里的 `outputLocation` 参数名。写成 `output` 不会报错，但也不会写出文件 |
 | 渲染出来没有声音，或报找不到 `sfx.wav` | 漏了第 2 步 `node scripts/sfx.mjs 17-star` |
 | `close-up … has zoom …; use at least 4.55` | 有人改了 `plan.js` 的镜头缩放。改回原值，不要改分镜 |
-| 内存不足、渲染很慢 | 打开 `scripts/render.mjs`，把 `threads: 4` 改小（例如 2） |
+| 内存不足、渲染很慢 | 不用改代码，设环境变量 `RENDER_THREADS`（默认 4）。内存不足就改小，如 `RENDER_THREADS=2 node scripts/render.mjs 17-star`；机器性能好可以调大（如 8） |
 | `sfx.mjs` 报 `non-finite sample` | 音效脚本里的进度值超出了 0–1。本次交付的版本没有这个问题，出现时说明脚本被改过 |
 
 ---
