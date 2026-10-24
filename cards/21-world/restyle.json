@@ -1,5 +1,5 @@
 {
-  "note": "Input for scripts/restyle.py. Coordinates in scan px of RWS_Tarot_21_World.jpg (re-measure if a clothed base image is supplied).",
+  "note": "Input for scripts/restyle.py. Coordinates in scan px of the clothed base scans/RWS_Tarot_21_World_着衣版.png (954x1648).",
   "frame": [
     0,
     0,

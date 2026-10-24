@@ -1,6 +1,6 @@
-// XXI 世界 — episode plan (series episode 10). Shot focus points are scan px of scans/RWS_Tarot_21_World.jpg (1112x1920).
-// The 1909 scan shows the dancer nude, wrapped only in a scarf: if the user supplies a clothed version (as for
-// Lovers / Star), use it as the base image and re-measure every point below on that image.
+// XXI 世界 — episode plan (series episode 10). Shot focus points are scan px of the user-supplied clothed base
+// scans/RWS_Tarot_21_World_着衣版.png (954x1648); scans/RWS_Tarot_21_World.jpg is for symbol reference only.
+// Points are a first pass read off the image; verify them on an annotated image (SOP 3.2) before the asset stage.
 //
 // Meanings checked against Waite, The Pictorial Key to the Tarot (1910), Part II §21:
 //   "It represents also the perfection and end of the Cosmos, the secret which is within it, the rapture of the
@@ -15,17 +15,17 @@
 
 const OPEN_DUR = 2.0; // the scarf lifts and swirls as she turns, the wreath leaves shiver (see layers.tsx)
 
-const CENTER = [555, 880]; // card centre (full shot)
-const SCARF = [420, 560]; // the purple scarf streaming from her shoulder
-const FACE = [540, 500]; // her face, turned to look back
-const WAND_L = [270, 870]; // wand in her right hand (viewer's left)
-const WAND_R = [825, 870]; // wand in her left hand (viewer's right)
-const LEGS = [570, 1250]; // crossed legs, one foot lifted
-const WREATH_L = [130, 900]; // the left side of the oval wreath
-const RIBBON_T = [550, 210]; // red ribbon binding the wreath, top
-const RIBBON_B = [530, 1540]; // red ribbon binding the wreath, bottom
-const EAGLE = [950, 170]; // the eagle, top right
-const BULL = [130, 1530]; // the ox, bottom left
+const CENTER = [477, 760]; // card centre (full shot)
+const SCARF = [300, 490]; // the dark mauve scarf streaming from her shoulder
+const FACE = [455, 430]; // her face, turned to look back
+const WAND_L = [235, 750]; // wand in her right hand (viewer's left)
+const WAND_R = [710, 750]; // wand in her left hand (viewer's right)
+const LEGS = [470, 1060]; // crossed legs, one foot lifted
+const WREATH_L = [110, 750]; // the left side of the oval wreath
+const RIBBON_T = [450, 180]; // red ribbon binding the wreath, top
+const RIBBON_B = [460, 1300]; // red ribbon binding the wreath, bottom
+const EAGLE = [790, 130]; // the eagle, top right
+const BULL = [130, 1290]; // the ox, bottom left
 
 const PLAN = [
   // ---------------- hook ----------------
