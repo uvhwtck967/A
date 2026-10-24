@@ -1,0 +1,30 @@
+{
+  "id": "14-temperance",
+  "index": 14,
+  "numeral": "XIV",
+  "nameZh": "节制",
+  "nameEn": "TEMPERANCE",
+  "frame": [0, 0, 0, 0],
+  "halos": [
+    { "at": [545, 720], "r": 190 },
+    { "at": [620, 1460], "r": 150 },
+    { "at": [160, 1250], "r": 140 }
+  ],
+  "summary": {
+    "upright": ["调和、平衡与中道", "BLENDING · BALANCE · THE MIDDLE WAY"],
+    "reversed": ["失衡、过度与急于求成", "IMBALANCE · EXCESS · HASTE"]
+  },
+  "collected": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 15,
+    "numeral": "XV",
+    "nameZh": "恶魔",
+    "nameEn": "THE DEVIL",
+    "question": "节制之后，是被锁链拴住的两个人。",
+    "questionEn": "After Temperance, two figures held by chains."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
