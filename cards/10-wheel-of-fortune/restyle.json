@@ -1,0 +1,12 @@
+{
+  "note": "Input for scripts/restyle.py. Coordinates in scan px of RWS_Tarot_10_Wheel_of_Fortune.jpg.",
+  "frame": [
+    48,
+    50,
+    1048,
+    1679
+  ],
+  "sprites": [],
+  "sky": [],
+  "reveals": []
+}

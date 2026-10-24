@@ -1,0 +1,30 @@
+{
+  "id": "10-wheel-of-fortune",
+  "index": 10,
+  "numeral": "X",
+  "nameZh": "命运之轮",
+  "nameEn": "WHEEL OF FORTUNE",
+  "frame": [48, 50, 1048, 1679],
+  "halos": [
+    { "at": [540, 935], "r": 360 },
+    { "at": [110, 960], "r": 120, "also": [[880, 1080]] },
+    { "at": [485, 330], "r": 140 }
+  ],
+  "summary": {
+    "upright": ["循环、起落与变化中的平衡", "CYCLES · RISE AND FALL · BALANCE WITHIN CHANGE"],
+    "reversed": ["逆境、失控与抗拒变化", "SETBACKS · LOSS OF CONTROL · RESISTING CHANGE"]
+  },
+  "collected": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 11,
+    "numeral": "XI",
+    "nameZh": "正义",
+    "nameEn": "JUSTICE",
+    "question": "轮盘停下之后，天平开始称量。",
+    "questionEn": "When the wheel comes to rest, the scales begin to weigh."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
