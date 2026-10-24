@@ -1,0 +1,30 @@
+{
+  "id": "08-strength",
+  "index": 8,
+  "numeral": "VIII",
+  "nameZh": "力量",
+  "nameEn": "STRENGTH",
+  "frame": [52, 51, 1034, 1694],
+  "halos": [
+    { "at": [430, 1030], "r": 150 },
+    { "at": [185, 375], "r": 90 },
+    { "at": [470, 790], "r": 100, "also": [[640, 930]] }
+  ],
+  "summary": {
+    "upright": ["勇气、耐心与内在力量", "COURAGE · PATIENCE · INNER STRENGTH"],
+    "reversed": ["自我怀疑、软弱与失控", "SELF-DOUBT · WEAKNESS · LOSS OF CONTROL"]
+  },
+  "collected": [0, 1, 2, 3, 4, 5, 6, 7, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 9,
+    "numeral": "IX",
+    "nameZh": "隐者",
+    "nameEn": "THE HERMIT",
+    "question": "离开狮子与原野，有人独自走上雪山。",
+    "questionEn": "Leaving the lion and the meadow, someone climbs the snowy peak alone."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
