@@ -101,11 +101,15 @@ BIRD_KEEP = [(745, 430), (870, 430), (870, 512), (812, 528), (780, 528), (745, 5
 
 sprites = {}
 wz = poly(WING_ZONE)
-sprites["wings"] = wz & ~blue  # the wing itself, not the sky between the two wings
+sprites["wings"] = cv2.dilate((wz & ~blue).astype(np.uint8), disk(5)).astype(bool) & wz  # the wing and its pale ink rim, not the open sky between the wings
 cz = poly(CROWN_ZONE) & ~poly(BIRD_KEEP)
 leaf = cz & ~open_blue
 leaf = cv2.morphologyEx(leaf.astype(np.uint8), cv2.MORPH_CLOSE, disk(3)).astype(bool) & cz
+# take the pale rim the scan has around every ink line with the leaves, so no light seam shows when they sway
+leaf = cv2.dilate(leaf.astype(np.uint8), disk(5)).astype(bool) & cz
 sprites["crown"] = leaf
+# where the wing polygon cuts through the bird's back, the original stays under the sprite (no sky seam at the shoulder)
+KEEP_UNDER = {"wings": poly([(793, 462), (814, 460), (824, 488), (806, 497), (790, 492)])}
 
 for name, m in sprites.items():
     b = bbox(m)
@@ -116,8 +120,9 @@ for name, m in sprites.items():
         Image.fromarray(rgba, "RGBA").save(f"{out}/{name}{suf}.png", optimize=True)
     fx[name] = b
 for name, m in sprites.items():
+    hole = m & ~KEEP_UNDER.get(name, np.zeros_like(m))
     for suf in arts:
-        arts[suf] = sky_fill(m, arts[suf])
+        arts[suf] = sky_fill(hole, arts[suf])
 
 # ---------------- 3. water mask ----------------
 # water.png: white, alpha = the painted streams and the water on the land (whole-picture size, half resolution).

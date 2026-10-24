@@ -108,9 +108,9 @@ export const Layers: React.FC<LayerProps> = ({ t, openT, uid, g, fx, cold, url }
 
   /* ---------- bird and tree ---------- */
   const ib = fx.level("ibis", 0.4, 0.4);
-  const wingA = (1.2 + 4.5 * ib) * (1 - 0.5 * cold);
+  const wingA = (1.0 + 3.5 * ib) * (1 - 0.5 * cold);
   const wingRot = -wingA * (0.5 + 0.5 * Math.sin(2 * Math.PI * (0.45 + 1.1 * ib) * t));
-  const crownRot = (0.35 + 0.65 * ib) * Math.sin(2 * Math.PI * 0.32 * t) + 0.15 * Math.sin(2 * Math.PI * 0.83 * t + 1);
+  const crownRot = (0.25 + 0.45 * ib) * Math.sin(2 * Math.PI * 0.32 * t) + 0.15 * Math.sin(2 * Math.PI * 0.83 * t + 1);
   const [wpx, wpy] = g.sc(...fxj.wingPivot);
   const [cpx, cpy] = g.sc(...fxj.crownPivot);
   const halo = fx.level("birdHalo", 0.6, 0.4) * (1 - 0.6 * cold);

@@ -66,9 +66,9 @@ const PLAN = [
   { kind: "line", zh: "此时，需要重新找回内在的信念。", en: "Now is the time to rediscover faith within.", dur: 3.1, shot: { f: FACE, z: 7.0, z1: 7.08, rev: true, fx: ["faceGlow"], desc: "回到倒置女子脸部特写，镜头短暂停稳，面部附近的柔和微光缓缓恢复，不改变牌的朝向" } },
 
   // ---------------- ending ----------------
-  { kind: "summary", dur: 4.8 },
+  { kind: "summary", dur: 3.6 }, // 1.2 s moved to the atlas (user, 2026-10-24): "已收录 6 / 22" now holds ~1 s at full strength
   { kind: "focus", zh: "“精神的馈赠”，是韦特为星星牌写下的主题之一。", en: "“Gifts of the Spirit” is one of the themes Waite associated with The Star.", dur: 4.5, shot: { full: true, z: 1.06, z1: 1.0, fx: ["radiant", "pour", "streams", "ibis"], desc: "切回正位全牌，缓缓拉远；星光、水流与圣鸟保持轻微动态" } },
-  { kind: "atlas", dur: 2.0, lines: [] }, // grid only: slots fly in, XVII lights, "已收录 6 / 22"
+  { kind: "atlas", dur: 3.2, lines: [] }, // grid only: slots fly in, XVII lights, "已收录 6 / 22"
   { kind: "teaser", dur: 3.6 },
 ];
 
