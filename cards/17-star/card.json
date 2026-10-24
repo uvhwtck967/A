@@ -5,10 +5,10 @@
   "nameZh": "星星",
   "nameEn": "THE STAR",
   "frame": [
-    0,
-    0,
-    0,
-    0
+    44,
+    38,
+    892,
+    1416
   ],
   "halos": [
     {
@@ -16,21 +16,21 @@
         490,
         290
       ],
-      "r": 170
+      "r": 150
     },
     {
       "at": [
-        430,
-        820
+        520,
+        840
       ],
-      "r": 200
+      "r": 185
     },
     {
       "at": [
         800,
-        500
+        478
       ],
-      "r": 70
+      "r": 40
     }
   ],
   "summary": {
@@ -39,8 +39,8 @@
       "HOPE · HEALING · INSPIRATION"
     ],
     "reversed": [
-      "失望、失去信心与自我怀疑",
-      "DISAPPOINTMENT · LOSS OF FAITH · SELF-DOUBT"
+      "失望、迷茫与自我怀疑",
+      "DISAPPOINTMENT · UNCERTAINTY · SELF-DOUBT"
     ]
   },
   "collected": [
@@ -55,14 +55,28 @@
     "numeral": "XVIII",
     "nameZh": "月亮",
     "nameEn": "THE MOON",
-    "question": "星光之后，月亮升起，道路变得模糊。",
-    "questionEn": "After the starlight, the moon rises and the path grows unclear."
+    "question": "星光之中，月亮升起。",
+    "questionEn": "In the starlight, the moon rises.",
+    "art": "cards/17-star/teaser_moon.jpg"
   },
-  "ambient": {},
+  "ambient": {
+    "radiant": {
+      "at": [
+        490,
+        290
+      ],
+      "r": 62,
+      "rays": 16,
+      "reverseDark": 0.55
+    }
+  },
   "reverseArt": "art_night.png",
   "reverseBrightness": 0.86,
   "reverseLook": {
     "saturate": 0.85,
     "hue": -8
+  },
+  "audio": {
+    "softNoise": true
   }
 }

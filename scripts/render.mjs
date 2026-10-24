@@ -27,7 +27,7 @@ await renderMedia({
   audioCodec: "aac",
   browserExecutable: BROWSER,
   crf: 21,
-  threads: 4,
+  threads: Number(process.env.RENDER_THREADS ?? 4),
   onProgress: ({ progress }) => {
     const p = Math.floor(progress * 10);
     if (p !== last) { last = p; process.stdout.write(`${p * 10}% `); }
