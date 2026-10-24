@@ -1,11 +1,7 @@
 {
-  "note": "Input for scripts/restyle.py. Coordinates in scan px of RWS_Tarot_18_Moon.jpg.",
-  "frame": [
-    0,
-    0,
-    0,
-    0
-  ],
+  "note": "Input for scripts/restyle.py. Coordinates in px of scans/RWS_Tarot_18_Moon.jpg (1111x1919). Upright = natural look (scan colours, a little darker); reversed = the night edition art_night.png, rebuilt by cards/18-moon/assets.py together with the dog-head, wolf-head and crayfish sprites and the pool mask.",
+  "frame": [61, 49, 1041, 1670],
+  "look": { "mode": "natural", "gamma": 1.1, "gain": 0.84, "sat": 1.0, "lift": [0.01, 0.008, 0.022] },
   "sprites": [],
   "sky": [],
   "reveals": []

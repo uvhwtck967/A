@@ -4,72 +4,31 @@
   "numeral": "XVIII",
   "nameZh": "月亮",
   "nameEn": "THE MOON",
-  "frame": [
-    0,
-    0,
-    0,
-    0
-  ],
+  "frame": [61, 49, 1041, 1670],
   "halos": [
-    {
-      "at": [
-        590,
-        400
-      ],
-      "r": 230
-    },
-    {
-      "at": [
-        455,
-        990
-      ],
-      "r": 90,
-      "also": [
-        [
-          690,
-          1010
-        ]
-      ]
-    },
-    {
-      "at": [
-        490,
-        1500
-      ],
-      "r": 110
-    }
+    { "at": [580, 393], "r": 150 },
+    { "at": [370, 1150], "r": 105, "also": [[790, 1140]] },
+    { "at": [490, 1500], "r": 85 }
   ],
   "summary": {
-    "upright": [
-      "幻象、恐惧与潜意识",
-      "ILLUSION · FEAR · THE SUBCONSCIOUS"
-    ],
-    "reversed": [
-      "迷雾渐散、压抑的恐惧",
-      "CONFUSION CLEARING · REPRESSED FEAR"
-    ]
+    "upright": ["幻象、恐惧与潜意识", "ILLUSION · FEAR · THE SUBCONSCIOUS"],
+    "reversed": ["迷雾渐散、恐惧缓解与情绪压抑", "CLEARING CONFUSION · EASING FEAR · SUPPRESSED EMOTIONS"]
   },
-  "collected": [
-    2,
-    6,
-    12,
-    13,
-    16,
-    17
-  ],
+  "collected": [2, 6, 12, 13, 16, 17],
   "teaser": {
     "index": 19,
     "numeral": "XIX",
     "nameZh": "太阳",
     "nameEn": "THE SUN",
-    "question": "长夜过去，一个孩子骑马走进阳光。",
-    "questionEn": "After the long night, a child rides out into the sunlight."
+    "question": "长夜过去，骑马的孩子迎来阳光。",
+    "questionEn": "The long night ends, and a child on horseback greets the sunlight.",
+    "art": "cards/18-moon/teaser_sun.jpg"
   },
-  "ambient": {},
+  "ambient": {
+    "radiant": { "at": [580, 393], "r": 70, "rays": 32, "reverseDark": 0.55 }
+  },
   "reverseArt": "art_night.png",
   "reverseBrightness": 0.86,
-  "reverseLook": {
-    "saturate": 0.85,
-    "hue": -8
-  }
+  "reverseLook": { "saturate": 0.85, "hue": -8 },
+  "audio": { "softNoise": true }
 }

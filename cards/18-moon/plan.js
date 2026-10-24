@@ -1,4 +1,5 @@
-// XVIII 月亮 — episode plan (series episode 7). Shot focus points are scan px of scans/RWS_Tarot_18_Moon.jpg (1111x1919).
+// XVIII 月亮 — episode plan (series episode 7). Shot focus points are scan px of scans/RWS_Tarot_18_Moon.jpg (1111x1919),
+// measured on out/18-moon/check/full_grid.jpg.
 //
 // Meanings checked against Waite, The Pictorial Key to the Tarot (1910), Part II §18:
 //   "It has sixteen chief and sixteen secondary rays. The card represents life of the imagination apart from
@@ -10,62 +11,63 @@
 //    of thought falls"
 //   divinatory: "Hidden enemies, danger, calumny, darkness, terror, deception, occult forces, error.
 //    Reversed: Instability, inconstancy, silence, lesser degrees of deception and error."
-// Upright follows the mainstream modern RWS reading (illusion; fear and anxiety; the subconscious);
-// reversed (confusion clearing, repressed fear) is the modern consensus, close to Waite's "lesser degrees of deception".
-// Dog = tamed / wolf = wild is a common modern reading, not Waite's own.
-// Trivia: 16 chief + 16 secondary rays (Waite, above) — recount on the scan when cutting the ray sprites.
+// Upright follows the mainstream modern RWS reading (illusion; fear; the subconscious); reversed (confusion clearing,
+// easing fear, suppressed emotion) is the modern consensus. Dog = domesticated / wolf = wild is a common modern reading.
+// Trivia: Waite's "the dew of thought falls".
+//
+// Follows the user's final storyboard (out/18-moon/分镜.md, "中英文字幕与画面修订版", 2026-10-24): every segment has the
+// storyboard's own duration (total 1:21.2, teaser at 1:16.7 for 4.5 s). The reversed part stays reversed throughout
+// (no upright flashback).
 
 const OPEN_DUR = 2.0; // the crayfish lifts its claws out of the pool, ripples spread, a distant howl (see layers.tsx)
 
-const CENTER = [553, 857]; // card centre (full shot)
-const MOON = [590, 400]; // the moon disc with its rays
-const FACE = [600, 420]; // the profile face inside the moon
-const DEW = [560, 790]; // the falling drops ("dew of thought") below the moon
-const HOWL = [570, 1010]; // dog and wolf heads, both raised to the moon
-const DOG_HEAD = [455, 990]; // the dog, left
-const WOLF_HEAD = [690, 1010]; // the wolf, right
-const PATH = [560, 1150]; // the path running from the pool between the towers
-const CRAYFISH = [490, 1500]; // the crayfish crawling out of the water
-const POOL = [500, 1600]; // the pool
+const CENTER = [551, 860]; // card centre (full shot)
+const FACE = [610, 405]; // the profile face inside the moon
+const DEW = [560, 770]; // the falling drops ("dew of thought") below the moon
+const FIELD = [600, 1080]; // the field and the path under the moonlight
+const PAIR = [600, 1120]; // dog and wolf together (both whole)
+const CRAYFISH = [490, 1510]; // the crayfish crawling out of the pool
+const DEEP = [820, 1590]; // the deep water of the pool, right of the crayfish
+const SURFACE = [520, 1540]; // the crayfish and the water surface together
 
 const PLAN = [
   // ---------------- hook ----------------
-  { kind: "open", dur: OPEN_DUR, shot: { f: CRAYFISH, z: 5.6, z1: 5.8, fx: ["emerge"], desc: "池塘特写；第 1 帧小龙虾从水里探出双钳，涟漪荡开；水声 + 远处一声嚎叫" } },
-  { kind: "line", style: "hook", zh: "月光很亮，", en: "The moonlight is bright,", pad: 0.2, shot: { pull: true, fx: ["dew"], desc: "从池塘拉远到整张牌，露珠缓缓飘落" } },
-  { kind: "line", style: "hook", zh: "却不是它自己的光。", en: "yet the light is not its own.", pad: 0.2, shot: { full: true, z: 1.0, z1: 1.02, fx: ["radiant", "dew"], desc: "整张牌，静止停留；月亮光芒缓缓呼吸" } },
-  { kind: "names", zh: "它的含义，藏在月亮、狗与狼、小龙虾之中。", names: ["月亮", "狗与狼", "小龙虾"], en: "Its meaning lies in the moon, the dog and the wolf, and the crayfish.", pad: 0.3, shot: { full: true, z: 1.02, z1: 1.06, link: true, fx: ["dew"], desc: "同一镜头，不切；月亮、狗与狼、小龙虾依次亮起光晕" } },
+  { kind: "open", dur: OPEN_DUR, shot: { f: CRAYFISH, z: 5.8, z1: 6.0, fx: ["emerge"], desc: "池塘特写；第 1 帧鳌虾从水里探出双钳，涟漪荡开；水声 + 远处一声嚎叫" } },
+  { kind: "line", style: "hook", zh: "月光很亮，", en: "The moonlight is bright,", dur: 2.2, shot: { pull: true, fx: ["dew"], desc: "从池塘拉远到整张牌，露珠缓缓飘落" } },
+  { kind: "line", style: "hook", zh: "却不是它自己的光。", en: "yet the light is not its own.", dur: 2.5, shot: { full: true, z: 1.0, z1: 1.02, fx: ["radiant", "dew"], desc: "整张牌，静止停留；月亮光芒缓缓呼吸" } },
+  { kind: "names", zh: "它的含义，藏在月亮、狗与狼、鳌虾之中。", names: ["月亮", "狗与狼", "鳌虾"], en: "Its meaning lies in the moon, the dog and the wolf, and the crayfish.", dur: 3.9, shot: { full: true, z: 1.02, z1: 1.05, link: true, fx: ["dew"], desc: "同一镜头，不切；月亮、狗与狼、鳌虾依次亮起光晕" } },
   { kind: "title", dur: 1.8 },
 
   // ---------------- upright ----------------
   { kind: "chapter", dur: 2.6, label: "含义一", symbol: "月亮", meaning: "幻象", en: "THE MOON · ILLUSION" },
-  { kind: "line", zh: "月亮里有一张脸，正向下望。", en: "There is a face in the moon, looking down.", shot: { f: FACE, z: 5.0, z1: 5.25, fx: ["radiant"], desc: "月中侧脸特写，缓慢推近；光芒呼吸" } },
-  { kind: "line", zh: "露珠般的光点，从空中落下。", en: "Drops of light fall through the air like dew.", shot: { f: DEW, z: 5.0, z1: 5.2, fx: ["dew"], desc: "直切月亮下方的光点特写，光点一颗颗缓缓飘落" } },
-  { kind: "line", zh: "反射的光，让一切真假难辨。", en: "Reflected light makes the real hard to tell from the false.", shot: { f: MOON, f1: CENTER, z: 2.6, z1: 1.0, pullBack: true, fx: ["mist"], desc: "从月亮缓缓拉回整张牌，原野上浮起一层薄雾" } },
+  { kind: "line", zh: "月亮反射着太阳的光。", en: "The moon reflects the light of the sun.", dur: 2.8, shot: { f: FACE, z: 5.4, z1: 5.7, fx: ["radiant"], desc: "月中侧脸特写，缓慢推近；光芒呼吸" } },
+  { kind: "line", zh: "光线朦胧，难以看清眼前的景象。", en: "In the dim light, the scene is hard to make out.", dur: 2.7, shot: { f: FIELD, z: 4.55, z1: 4.75, fx: ["haze"], desc: "切至月光下的原野与小路，景物轮廓朦胧，缓慢推近" } },
+  { kind: "line", zh: "模糊之处，真实与幻象交织。", en: "Where things grow indistinct, reality and illusion intertwine.", dur: 2.8, shot: { f: FIELD, z: 4.75, z1: 4.95, link: true, fx: ["haze", "mist"], desc: "延续上一镜，不切；原野与小路保持朦胧，薄雾缓缓掠过" } },
 
   { kind: "chapter", dur: 2.6, label: "含义二", symbol: "狗与狼", meaning: "恐惧", en: "THE DOG AND THE WOLF · FEAR" },
-  { kind: "line", zh: "一只狗、一头狼，对着月亮嚎叫。", en: "A dog and a wolf howl at the moon.", shot: { f: HOWL, z: 4.6, z1: 4.75, fx: ["howl"], desc: "狗与狼同框，两颗头微微上扬；嚎叫声" } },
-  { kind: "line", zh: "一个被驯养，一个仍是野性。", en: "One is tame, the other still wild.", shot: { f: WOLF_HEAD, z: 7.0, z1: 7.2, fx: ["howl"], desc: "直切狼头特写，红眼、张口" } },
-  { kind: "line", zh: "象征面对未知时，本能的恐惧。", en: "They stand for instinctive fear of the unknown.", shot: { f: DOG_HEAD, z: 7.0, z1: 7.2, fx: ["mist"], desc: "直切狗头特写，仰头望月；薄雾掠过" } },
+  { kind: "line", zh: "狗与狼，都对着月亮嚎叫。", en: "Both the dog and the wolf howl at the moon.", dur: 2.9, shot: { f: PAIR, z: 4.55, z1: 4.65, fx: ["howl"], desc: "狗与狼同框，两颗头微微上扬；嚎叫声" } },
+  { kind: "line", zh: "一个经过驯化，一个保留野性。", en: "One is domesticated; the other remains wild.", dur: 2.8, shot: { f: PAIR, z: 4.65, z1: 4.75, link: true, fx: ["tameWild"], desc: "狗与狼持续同框，不切；说到「经过驯化」时狗轻微加亮，说到「保留野性」时狼轻微加亮，随后恢复" } },
+  { kind: "line", zh: "面对未知，都流露出本能的恐惧。", en: "Both express an instinctive fear of the unknown.", dur: 2.9, shot: { f: PAIR, z: 4.75, z1: 4.85, link: true, fx: ["howl"], desc: "狗与狼持续同框，不切；两者仰头嚎叫，配合嚎叫声" } },
 
-  { kind: "chapter", dur: 2.6, label: "含义三", symbol: "小龙虾", meaning: "潜意识", en: "THE CRAYFISH · THE SUBCONSCIOUS" },
-  { kind: "line", zh: "一只小龙虾，从深水里爬上岸。", en: "A crayfish crawls out of the deep water.", shot: { f: CRAYFISH, z: 6.0, z1: 6.2, fx: ["emerge"], desc: "小龙虾特写，双钳缓缓抬起，水面涟漪" } },
-  { kind: "line", zh: "一条小路，从水边伸向远方。", en: "A path leads from the water into the distance.", shot: { f: PATH, z: 4.6, z1: 4.8, fx: ["mist"], desc: "直切小路特写：穿过狗与狼之间，伸向两座塔之间的远山；薄雾流动" } },
-  { kind: "line", zh: "象征浮出水面的潜意识。", en: "It stands for the subconscious rising to the surface.", shot: { f: POOL, z: 5.0, z1: 5.2, fx: ["emerge", "sweep"], desc: "直切池水特写，涟漪一圈圈扩散，水面波光" } },
+  { kind: "chapter", dur: 2.6, label: "含义三", symbol: "鳌虾", meaning: "潜意识", en: "THE CRAYFISH · THE SUBCONSCIOUS" },
+  { kind: "line", zh: "一只鳌虾，从池水中缓缓爬出。", en: "A crayfish slowly crawls out of the pool.", dur: 3.0, shot: { f: CRAYFISH, z: 5.6, z1: 5.85, fx: ["emerge"], desc: "鳌虾特写，双钳缓缓抬起，水面涟漪" } },
+  { kind: "line", zh: "池水象征内心深处，藏着尚未察觉的情绪。", en: "The pool represents the depths of the mind, holding emotions not yet recognised.", dur: 2.8, shot: { f: DEEP, z: 6.0, z1: 6.4, fx: ["deep"], desc: "切至池水深处特写，水色渐深，水下轮廓隐约可见，镜头缓慢推近" } },
+  { kind: "line", zh: "鳌虾浮出水面，如同潜意识逐渐显现。", en: "As the crayfish surfaces, so does the subconscious.", dur: 2.6, shot: { f: SURFACE, z: 4.6, z1: 4.8, fx: ["emerge", "sweep"], desc: "鳌虾与水面同框，鳌虾缓缓浮现，涟漪一圈圈扩散" } },
 
   // ---------------- reversed ----------------
   { kind: "line", style: "hook", zh: "如果，它倒过来呢？", en: "And if it's reversed?", dur: 2.9, shot: { reverse: true, desc: "整张牌缓缓旋转 180 度" } },
-  { kind: "chapter", dur: 2.6, label: "逆位", symbol: "倒转的牌", meaning: "迷雾渐散与压抑的恐惧", en: "REVERSED · CONFUSION CLEARING, REPRESSED FEAR", rev: true },
-  { kind: "line", zh: "月光变暗，露珠停在半空。", en: "The moonlight dims, and the dew hangs still.", shot: { full: true, z: 1.0, z1: 1.03, rev: true, fx: ["frostGrow"], desc: "倒置全牌，寒霜从边缘蔓延；光点定住" } },
-  { kind: "line", zh: "看不清的事，开始慢慢浮现。", en: "What was unclear begins to surface.", shot: { f: FACE, z: 5.0, z1: 5.15, rev: true, fx: ["mistClear"], desc: "直切倒置的月中侧脸特写，薄雾缓缓散开" } },
-  { kind: "line", zh: "正位时，恐惧被月光放大。", en: "Upright, the moonlight magnifies fear.", shot: { f: HOWL, z: 4.6, z1: 4.8, flash: true, fx: ["howl"], desc: "闪回正位狗与狼特写（原彩），再次嚎叫" } },
-  { kind: "line", zh: "倒过来，恐惧被压回心底。", en: "Reversed, the fear is pushed back down.", shot: { f: CRAYFISH, z: 6.0, z1: 6.15, rev: true, fx: ["sink"], desc: "直切倒置的小龙虾特写，缓缓沉回水中" } },
-  { kind: "line", zh: "逆位象征迷惑渐消，与压抑的恐惧。", en: "Reversed, it stands for clearing confusion and repressed fear.", shot: { full: true, z: 1.0, z1: 1.06, rev: true, desc: "倒置全牌，缓慢推近，静止" } },
+  { kind: "chapter", dur: 2.6, label: "逆位", symbol: "倒转的牌", meaning: "迷雾渐散与内在不安", en: "REVERSED · CLEARING CONFUSION AND INNER UNEASE", rev: true },
+  { kind: "line", zh: "迷雾渐渐消散，真相浮出水面。", en: "The mist clears, and the truth comes to light.", dur: 2.6, shot: { full: true, z: 1.0, z1: 1.03, rev: true, fx: ["mistClear"], desc: "倒置全牌，薄雾直接缓缓散开，原有景物逐渐清晰" } },
+  { kind: "line", zh: "恐惧随之减弱，不安逐渐缓解。", en: "Fear subsides, and unease begins to ease.", dur: 2.7, shot: { f: PAIR, z: 4.6, z1: 4.7, rev: true, fx: ["relax"], desc: "切至倒置狗与狼同框，两者头部与身体轻微舒缓，逐渐放松；仅保留轻微动作，不作嚎叫动作，不配嚎叫声" } },
+  { kind: "line", zh: "也可能只是压抑了情绪。", en: "Or emotions may simply be suppressed.", dur: 2.6, shot: { f: CRAYFISH, z: 5.6, z1: 5.75, rev: true, fx: ["sink"], desc: "切至倒置鳌虾与池水特写，鳌虾缓缓隐入水下；保持倒置朝向" } },
+  { kind: "line", zh: "表面平静，内心却仍在动荡。", en: "The surface is calm, yet turmoil remains within.", dur: 2.6, shot: { f: DEEP, z: 6.0, z1: 6.15, rev: true, fx: ["calm"], desc: "切至倒置池水特写，水面趋于平静，仍有细微涟漪缓缓扩散" } },
+  { kind: "line", zh: "此时，需要勇于直面内心。", en: "Now, it takes courage to face what lies within.", dur: 3.3, shot: { full: true, z: 1.0, z1: 1.06, rev: true, desc: "倒置全牌，缓慢推近，静止" } },
 
   // ---------------- ending ----------------
-  { kind: "summary", dur: 5.65 }, // tuned so the teaser lands on 1:16.7 (SOP 0.4)
-  { kind: "focus", zh: "月亮有十六道长光芒，十六道短光芒。", en: "The moon has sixteen long rays and sixteen short ones.", shot: { full: true, z: 1.0, z1: 1.04, fx: ["rayCount"], desc: "正位整张牌，月亮的光芒依次亮起" } },
+  { kind: "summary", dur: 5.7 },
+  { kind: "focus", zh: "月亮下飘落的光点，被韦特称为“思想的露珠”。", en: "Waite calls the falling drops beneath the moon “the dew of thought.”", dur: 3.4, shot: { f: DEW, z: 4.8, z1: 5.0, fx: ["dew", "dewLit"], desc: "切回正位月亮下方飘落光点的特写，光点一颗颗缓缓落下" } },
   { kind: "atlas", dur: 2.8, lines: [] }, // grid only: slots fly in, XVIII lights, "已收录 7 / 22"
   { kind: "teaser", dur: 4.5 },
 ];
 
-module.exports = { PLAN, impacts: [], OPEN_DUR };
+module.exports = { PLAN, impacts: [], OPEN_DUR, CENTER };
