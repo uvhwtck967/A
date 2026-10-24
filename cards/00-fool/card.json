@@ -1,0 +1,32 @@
+{
+  "id": "00-fool",
+  "index": 0,
+  "numeral": "0",
+  "nameZh": "愚者",
+  "nameEn": "THE FOOL",
+  "frame": [69, 62, 1063, 1672],
+  "halos": [
+    { "at": [240, 1390], "r": 110 },
+    { "at": [975, 518], "r": 70 },
+    { "at": [795, 360], "r": 85 }
+  ],
+  "summary": {
+    "upright": ["新的开始、纯真与自由", "NEW BEGINNINGS · INNOCENCE · FREEDOM"],
+    "reversed": ["鲁莽、轻率与忽视风险", "RECKLESSNESS · CARELESSNESS · IGNORING RISK"]
+  },
+  "collected": [2, 6, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 1,
+    "numeral": "I",
+    "nameZh": "魔术师",
+    "nameEn": "THE MAGICIAN",
+    "question": "一手指天，一手指地，他在做什么？",
+    "questionEn": "One hand to the sky, one to the earth: what is he doing?"
+  },
+  "ambient": {
+    "radiant": { "at": [975, 150], "r": 110 }
+  },
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}

@@ -1,0 +1,12 @@
+{
+  "note": "Input for scripts/restyle.py. Coordinates in scan px of scans/RWS_Tarot_00_Fool.jpg (1144x1919). Frame from the dark-line scan; confirm before restyle.",
+  "frame": [
+    69,
+    62,
+    1063,
+    1672
+  ],
+  "sprites": [],
+  "sky": [],
+  "reveals": []
+}
