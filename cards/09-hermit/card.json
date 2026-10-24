@@ -1,0 +1,30 @@
+{
+  "id": "09-hermit",
+  "index": 9,
+  "numeral": "IX",
+  "nameZh": "隐者",
+  "nameEn": "THE HERMIT",
+  "frame": [55, 52, 1060, 1688],
+  "halos": [
+    { "at": [170, 425], "r": 110 },
+    { "at": [640, 1600], "r": 150, "also": [[400, 1590], [930, 1610]] },
+    { "at": [455, 900], "r": 110, "also": [[430, 410], [500, 1590]] }
+  ],
+  "summary": {
+    "upright": ["内省、独处与内在指引", "INTROSPECTION · SOLITUDE · INNER GUIDANCE"],
+    "reversed": ["孤立、封闭与过度谨慎", "ISOLATION · WITHDRAWAL · EXCESSIVE CAUTION"]
+  },
+  "collected": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 10,
+    "numeral": "X",
+    "nameZh": "命运之轮",
+    "nameEn": "WHEEL OF FORTUNE",
+    "question": "隐者在山顶静立，下一张牌却一直在转。",
+    "questionEn": "The Hermit stands still on the peak; the next card never stops turning."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
