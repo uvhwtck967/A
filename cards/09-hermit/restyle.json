@@ -1,0 +1,12 @@
+{
+  "note": "Input for scripts/restyle.py. Coordinates in scan px of scans/RWS_Tarot_09_Hermit.jpg.",
+  "frame": [
+    62,
+    60,
+    1054,
+    1685
+  ],
+  "sprites": [],
+  "sky": [],
+  "reveals": []
+}

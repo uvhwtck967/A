@@ -1,0 +1,80 @@
+{
+  "id": "09-hermit",
+  "index": 9,
+  "numeral": "IX",
+  "nameZh": "隐者",
+  "nameEn": "THE HERMIT",
+  "frame": [
+    62,
+    60,
+    1054,
+    1685
+  ],
+  "halos": [
+    {
+      "at": [
+        168,
+        430
+      ],
+      "r": 110
+    },
+    {
+      "at": [
+        560,
+        1630
+      ],
+      "r": 170
+    },
+    {
+      "at": [
+        470,
+        1000
+      ],
+      "r": 130
+    }
+  ],
+  "summary": {
+    "upright": [
+      "内省、独处与指引",
+      "INTROSPECTION · SOLITUDE · GUIDANCE"
+    ],
+    "reversed": [
+      "孤立、封闭与过度戒备",
+      "ISOLATION · WITHDRAWAL · EXCESSIVE CAUTION"
+    ]
+  },
+  "collected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "teaser": {
+    "index": 10,
+    "numeral": "X",
+    "nameZh": "命运之轮",
+    "nameEn": "WHEEL OF FORTUNE",
+    "question": "走下山顶，轮盘已经开始转动。",
+    "questionEn": "Down from the peak, the wheel is already turning."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
