@@ -1,0 +1,90 @@
+{
+  "id": "07-chariot",
+  "index": 7,
+  "numeral": "VII",
+  "nameZh": "战车",
+  "nameEn": "THE CHARIOT",
+  "frame": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "halos": [
+    {
+      "at": [
+        218,
+        1330
+      ],
+      "r": 130,
+      "also": [
+        [
+          849,
+          1310
+        ]
+      ]
+    },
+    {
+      "at": [
+        262,
+        930
+      ],
+      "r": 80,
+      "also": [
+        [
+          788,
+          923
+        ]
+      ]
+    },
+    {
+      "at": [
+        537,
+        252
+      ],
+      "r": 90
+    }
+  ],
+  "summary": {
+    "upright": [
+      "意志、掌控与胜利",
+      "WILLPOWER · CONTROL · VICTORY"
+    ],
+    "reversed": [
+      "失控、冲突与方向迷失",
+      "LOSS OF CONTROL · CONFLICT · NO DIRECTION"
+    ]
+  },
+  "collected": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    12,
+    13,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "teaser": {
+    "index": 8,
+    "numeral": "VIII",
+    "nameZh": "力量",
+    "nameEn": "STRENGTH",
+    "question": "以意志驾驭之后，是更温柔的力量。",
+    "questionEn": "After steering by will comes a gentler kind of strength."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": {
+    "saturate": 0.85,
+    "hue": -8
+  }
+}
