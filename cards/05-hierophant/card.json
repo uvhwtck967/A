@@ -1,0 +1,30 @@
+{
+  "id": "05-hierophant",
+  "index": 5,
+  "numeral": "V",
+  "nameZh": "教皇",
+  "nameEn": "THE HIEROPHANT",
+  "frame": [55, 68, 1035, 1683],
+  "halos": [
+    { "at": [550, 300], "r": 120 },
+    { "at": [530, 1600], "r": 100 },
+    { "at": [190, 1335], "r": 90, "also": [[940, 1345]] }
+  ],
+  "summary": {
+    "upright": ["精神权威、传承与教导", "SPIRITUAL AUTHORITY · TRADITION · TEACHING"],
+    "reversed": ["教条、盲从，或打破常规", "DOGMA · CONFORMITY · BREAKING CONVENTION"]
+  },
+  "collected": [0, 1, 2, 3, 4, 6, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 7,
+    "numeral": "VII",
+    "nameZh": "战车",
+    "nameEn": "THE CHARIOT",
+    "question": "从跪着聆听，到驾车远行。",
+    "questionEn": "From kneeling to listen, to riding out."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
