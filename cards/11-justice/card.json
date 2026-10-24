@@ -1,0 +1,30 @@
+{
+  "id": "11-justice",
+  "index": 11,
+  "numeral": "XI",
+  "nameZh": "正义",
+  "nameEn": "JUSTICE",
+  "frame": [0, 0, 0, 0],
+  "halos": [
+    { "at": [900, 1040], "r": 150 },
+    { "at": [180, 360], "r": 130 },
+    { "at": [480, 1535], "r": 60 }
+  ],
+  "summary": {
+    "upright": ["公平、决断与行动的后果", "FAIRNESS · DECISION · CONSEQUENCES"],
+    "reversed": ["不公、偏见与逃避责任", "INJUSTICE · BIAS · AVOIDING RESPONSIBILITY"]
+  },
+  "collected": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 16, 17, 18, 19, 20, 21],
+  "teaser": {
+    "index": 14,
+    "numeral": "XIV",
+    "nameZh": "节制",
+    "nameEn": "TEMPERANCE",
+    "question": "天平停稳之后，水在两只杯子之间流动。",
+    "questionEn": "After the scales settle, water flows between two cups."
+  },
+  "ambient": {},
+  "reverseArt": "art_night.png",
+  "reverseBrightness": 0.86,
+  "reverseLook": { "saturate": 0.85, "hue": -8 }
+}
