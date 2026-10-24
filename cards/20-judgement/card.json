@@ -5,52 +5,48 @@
   "nameZh": "审判",
   "nameEn": "JUDGEMENT",
   "frame": [
-    0,
-    0,
-    0,
-    0
+    35,
+    31,
+    912,
+    1453
   ],
   "halos": [
     {
       "at": [
-        640,
-        900
+        555,
+        830
       ],
-      "r": 110
+      "r": 80
     },
     {
       "at": [
-        525,
-        1360
+        473,
+        1170
       ],
-      "r": 100,
+      "r": 130
+    },
+    {
+      "at": [
+        700,
+        930
+      ],
+      "r": 80,
       "also": [
         [
-          195,
-          1290
-        ],
-        [
-          930,
-          1250
+          275,
+          1030
         ]
       ]
-    },
-    {
-      "at": [
-        540,
-        1560
-      ],
-      "r": 120
     }
   ],
   "summary": {
     "upright": [
-      "召唤、重生与清算",
-      "THE CALL · REBIRTH · RECKONING"
+      "觉醒、重生与内在召唤",
+      "AWAKENING · REBIRTH · INNER CALLING"
     ],
     "reversed": [
-      "犹豫、忽视召唤与自我苛责",
-      "HESITATION · IGNORING THE CALL · HARSH SELF-JUDGEMENT"
+      "犹豫、自我怀疑与回避召唤",
+      "HESITATION · SELF-DOUBT · IGNORING THE CALL"
     ]
   },
   "collected": [
@@ -68,8 +64,8 @@
     "numeral": "XXI",
     "nameZh": "世界",
     "nameEn": "THE WORLD",
-    "question": "大阿卡纳的最后一张，她在花环中起舞。",
-    "questionEn": "The last of the Major Arcana: she dances inside a wreath."
+    "question": "旅程的最后一张牌，会在哪里结束？",
+    "questionEn": "The last card of the journey: where does it end?"
   },
   "ambient": {},
   "reverseArt": "art_night.png",
