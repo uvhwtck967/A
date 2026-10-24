@@ -1,0 +1,14 @@
+{
+  "note": "Input for scripts/restyle.py. Coordinates in scan px of scans/RWS_Tarot_05_Hierophant.jpg (1114x1919). Frame measured from the black border rows/cols (border x 42-53 / 1036-1054, y 61-66 / 1684-1692). Sprites (the two ministers' heads for the bow, hand glow) are added after the storyboard is confirmed.",
+  "frame": [55, 68, 1035, 1683],
+  "sprites": [],
+  "sky": [],
+  "reveals": [],
+  "look": {
+    "mode": "natural",
+    "gamma": 1.1,
+    "gain": 0.84,
+    "sat": 1.05,
+    "lift": [0.01, 0.008, 0.022]
+  }
+}
