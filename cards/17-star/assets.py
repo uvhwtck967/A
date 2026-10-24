@@ -1,5 +1,5 @@
 # XVII 星星 — card-specific assets, run after restyle.py:
-#   python -I cards/17-star/assets.py scans/Star_clothed.png
+#   python -I cards/17-star/assets.py scans/Star_clothed2.png
 # 1. art_night.png is rebuilt as a moonlit grade of art.png. restyle.py's tone-curve night edition does not work on
 #    this card: the robe's pale-blue folds have the same luminance and saturation as the sky, so they turned into
 #    dark blotches. Here the whole picture is darkened and cooled evenly, and only the open sky and the water
@@ -8,7 +8,7 @@
 #      wings.png  the bird's two raised wings, flapped gently by layers.tsx (rotated about the shoulder)
 #      crown.png  the leafy crown of the tree, swayed about the trunk
 #    The hole under each sprite is filled with the surrounding sky in both arts, so the sprite is the only copy.
-# Writes cards/17-star/fx.json (boxes in scan px of scans/Star_clothed.png, measured on out/17-star/check/*.jpg).
+# Writes cards/17-star/fx.json (boxes in scan px of scans/Star_clothed2.png, measured on out/17-star/check/*.jpg).
 import sys, os, json
 import numpy as np
 import cv2
@@ -80,7 +80,8 @@ def bbox(m, pad=3):
 
 def sky_fill(hole_scan, img, sigma=6):
     """fill a hole (scan-px mask) from the open sky around it: normalized convolution at 1/8 scale + grain"""
-    hole = to_art(cv2.dilate(hole_scan.astype(np.uint8), disk(5)) > 0, 2.0)
+    # grow the hole only into sky (to take the pale rim), never over ink or leaves the sprite does not carry
+    hole = to_art((cv2.dilate(hole_scan.astype(np.uint8), disk(5)) > 0) & (hole_scan | blue), 2.0)
     keep = to_art(blue & ~cv2.dilate(hole_scan.astype(np.uint8), disk(7)).astype(bool), 0)  # any sky-blue pixel
     keep = (keep > 0.99).astype(np.float32)
     q = 8
@@ -103,13 +104,17 @@ sprites = {}
 wz = poly(WING_ZONE)
 sprites["wings"] = cv2.dilate((wz & ~blue).astype(np.uint8), disk(5)).astype(bool) & wz  # the wing and its pale ink rim, not the open sky between the wings
 cz = poly(CROWN_ZONE) & ~poly(BIRD_KEEP)
-leaf = cz & ~open_blue
+# every sky-blue pixel inside the zone is sky between the leaves (Star_clothed2's saturated sky is not reached by
+# open_blue there), so only leaves, branches and their ink go into the sprite; the polygon's straight edges then
+# never show as a cut when the crown sways
+leaf = cz & ~blue
 leaf = cv2.morphologyEx(leaf.astype(np.uint8), cv2.MORPH_CLOSE, disk(3)).astype(bool) & cz
-# take the pale rim the scan has around every ink line with the leaves, so no light seam shows when they sway
-leaf = cv2.dilate(leaf.astype(np.uint8), disk(5)).astype(bool) & cz
+leaf = cv2.dilate(leaf.astype(np.uint8), disk(3)).astype(bool) & cz
 sprites["crown"] = leaf
 # where the wing polygon cuts through the bird's back, the original stays under the sprite (no sky seam at the shoulder)
-KEEP_UNDER = {"wings": poly([(793, 462), (814, 460), (824, 488), (806, 497), (790, 492)])}
+KEEP_UNDER = {"wings": poly([(793, 462), (814, 460), (824, 488), (806, 497), (790, 492)]),
+              # where the crown polygon cuts through leaves or the trunk, a band of original stays under the sprite
+              "crown": cz & ~(cv2.erode(cz.astype(np.uint8), disk(13)) > 0) & ~blue}
 
 for name, m in sprites.items():
     b = bbox(m)

@@ -1,4 +1,4 @@
-// XVII 星星 — episode plan (series episode 6). Shot focus points are px of scans/Star_clothed.png (955x1647), the
+// XVII 星星 — episode plan (series episode 6). Shot focus points are px of scans/Star_clothed2.png (955x1647), the
 // user's clothed-figure version supplied 2026-10-21 (the 1909 scan shows the figure nude; RWS_Tarot_17_Star.jpg is
 // kept only for reference). Measured on out/17-star/check/full_grid.jpg.
 //

@@ -118,8 +118,8 @@ tarot-atlas/
 
 ### 重新处理素材（本次不需要，仅备查）
 ```bash
-python -I scripts/restyle.py scans/Star_clothed.png cards/17-star
-python -I cards/17-star/assets.py scans/Star_clothed.png   # 夜色版重调、翅膀和树冠精灵图、水流遮罩
+python -I scripts/restyle.py scans/Star_clothed2.png cards/17-star
+python -I cards/17-star/assets.py scans/Star_clothed2.png   # 夜色版重调、翅膀和树冠精灵图、水流遮罩
 ```
 两条必须按顺序一起跑（assets.py 会在 restyle.py 刚写出的 art.png 上挖洞补天空，单独重跑会出错）。它们会覆盖 `public/cards/17-star/` 下的图片和 `cards/17-star/generated.json`、`fx.json`。
 

@@ -17,7 +17,7 @@ const { OPEN_DUR } = require("./plan.js");
  *                   each with a night twin crossfaded by the reversed tint)
  *   "birdHalo"      a soft light breathes around the bird (weaker reversed)
  *   "faceGlow"      a soft light near her face slowly returns
- * Coordinates are scan px of scans/Star_clothed.png.
+ * Coordinates are scan px of scans/Star_clothed2.png.
  */
 type Box = [number, number, number, number];
 type P = [number, number];
